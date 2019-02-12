@@ -9,7 +9,6 @@ node_modules
 .eslintrc
 .prettierrc
 tslint.json
-tsconfig.json
 .eslintrcignore
 .npmignore
 .dockerignore
