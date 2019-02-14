@@ -22,6 +22,12 @@ then
 docker run -p 3000:3000 -d mercury-parser-api
 ```
 
+## Usage
+
+```
+curl localhost:3000/parser?url=https://www.bbc.co.uk/news/science-environment-35876621
+```
+
 ## License
 
 Licensed under either of the below, at your preference:
