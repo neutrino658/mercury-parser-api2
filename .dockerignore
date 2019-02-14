@@ -5,7 +5,6 @@ node_modules
 .github
 .eslintrc
 .prettierrc
-tslint.json
 .eslintrcignore
 .dockerignore
 yarn.lock

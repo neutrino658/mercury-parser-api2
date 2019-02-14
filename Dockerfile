@@ -4,10 +4,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN apk add --no-cache git && npm install
+RUN apk add --no-cache --virtual build-pack git \
+    && npm install \
+    && apk del build-pack 
 
 COPY . .
 
 EXPOSE 3000
 
-CMD npm run serve
+CMD npm run start
