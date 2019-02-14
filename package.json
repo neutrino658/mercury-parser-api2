@@ -1,66 +1,29 @@
 {
-  "name": "mercury-api",
-  "version": "0.0.1",
-  "author": "Postlight",
-  "description": "The serverless Mercury Parser API",
-  "main": "src/handler.js",
+  "name": "mercury-parser-api",
+  "version": "1.0.0",
+  "description": "🐋 A Dockerized drop-in replacement for the Mercury Parser API.",
+  "main": "index.js",
   "scripts": {
-    "deploy:env": "cross-env-shell sls deploy --stage $NODE_ENV",
-    "deploy": "cross-env NODE_ENV=dev yarn deploy:env",
-    "deploy:prod": "cross-env NODE_ENV=prod yarn deploy:env",
-    "deploy:stage": "cross-env NODE_ENV=stage yarn deploy:env",
-    "lint": "tslint -c tslint.json --fix './src/**/*.ts' && eslint ./src --fix",
-    "precommit": "lint-staged",
-    "serve": "serverless offline start",
-    "serve:watch": "nodemon -e js,ts,jsx,tsx -x serverless offline start",
-    "tail:parser": "serverless logs --function mercuryParser --tail",
-    "tail:html": "serverless logs --function parseHtml --tail",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "build": "serverless webpack",
-    "test:parse": "serverless invoke local --function mercuryParser --path fixtures/nytimes.json",
-    "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
+  "engines": {
+    "node": ">=6"
+  },
+  "author": "HenryQW <github@henry.wang>",
   "dependencies": {
     "@postlight/mercury-parser": "^2.0.0",
-    "@types/aws-lambda": "^8.10.19"
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "helmet": "^3.12.0",
+    "mongoose": "^5.0.8",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "@babel/core": "7.2.2",
-    "@babel/preset-env": "7.3.1",
-    "@types/jest": "24.0.4",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "24.1.0",
-    "babel-loader": "8.0.5",
-    "cross-env": "5.2.0",
-    "eslint": "5.13.0",
-    "eslint-config-airbnb": "17.1.0",
-    "eslint-config-prettier": "4.0.0",
-    "eslint-import-resolver-typescript": "1.1.1",
-    "eslint-plugin-import": "2.16.0",
-    "eslint-plugin-jsx-a11y": "6.2.1",
-    "eslint-plugin-react": "7.12.4",
-    "husky": "1.3.1",
-    "jest": "24.1.0",
-    "lint-staged": "8.1.3",
-    "nodemon": "1.18.10",
-    "prettier": "1.16.4",
-    "serverless": "1.37.1",
-    "serverless-offline": "4.4.2",
-    "serverless-webpack": "5.2.0",
-    "ts-jest": "23.10.5",
-    "ts-loader": "5.3.3",
-    "tslint": "5.12.1",
-    "tslint-config-prettier": "1.18.0",
-    "tslint-react": "3.6.0",
-    "typescript": "3.3.3",
-    "webpack": "4.29.3"
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "yarn lint",
-      "prettier --write",
-      "git add"
-    ]
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "nodemon": "^1.17.1"
   }
 }
