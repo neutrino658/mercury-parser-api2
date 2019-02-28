@@ -1,6 +1,8 @@
 # Mercury Parser API
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api?ref=badge_shield)
 
+[![Docker Pulls](https://cloud.docker.com/u/wangqiru/repository/docker/wangqiru/mercury-parser-api)](https://img.shields.io/docker/pulls/wangqiru/mercury-parser-api.svg)
+[![Docker Stars](https://cloud.docker.com/u/wangqiru/repository/docker/wangqiru/mercury-parser-api)](https://img.shields.io/docker/stars/wangqiru/mercury-parser-api.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api?ref=badge_shield)
 
 This repo provides a dockerized drop-in replacement for the [Mercury Parser](https://github.com/postlight/mercury-parser) API.
 
@@ -8,25 +10,25 @@ This repo provides a dockerized drop-in replacement for the [Mercury Parser](htt
 
 ### Pull And Run
 
-```
+```bash
 docker run -p 3000:3000 -d wangqiru/mercury-parser-api
 ```
 
 ### Build Your Own
 
-```
+```bash
 docker build -t mercury-parser-api .
 ```
 
 then
 
-```
+```bash
 docker run -p 3000:3000 -d mercury-parser-api
 ```
 
 ## Usage
 
-```
+```bash
 curl localhost:3000/parser?url=https://www.bbc.co.uk/news/science-environment-35876621
 ```
 
@@ -35,9 +37,8 @@ curl localhost:3000/parser?url=https://www.bbc.co.uk/news/science-environment-35
 Licensed under either of the below, at your preference:
 
 - Apache License, Version 2.0
-  ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+  ([LICENSE-APACHE](http://www.apache.org/licenses/LICENSE-2.0))
 - MIT license
-  ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
-
+  ([LICENSE-MIT](http://opensource.org/licenses/MIT))
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api?ref=badge_large)
