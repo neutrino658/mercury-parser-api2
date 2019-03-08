@@ -1,7 +1,7 @@
 # Mercury Parser API
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/wangqiru/mercury-parser-api.svg)](https://cloud.docker.com/u/wangqiru/repository/docker/wangqiru/mercury-parser-api)
-[![Docker Stars](https://img.shields.io/docker/stars/wangqiru/mercury-parser-api.svg)](https://cloud.docker.com/u/wangqiru/repository/docker/wangqiru/mercury-parser-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/wangqiru/mercury-parser-api.svg)](https://hub.docker.com/r/wangqiru/mercury-parser-api)
+[![Docker Stars](https://img.shields.io/docker/stars/wangqiru/mercury-parser-api.svg)](https://hub.docker.com/r/wangqiru/mercury-parser-api)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FHenryQW%2Fmercury-parser-api?ref=badge_shield)
 
 This repo provides a dockerized drop-in replacement for the [Mercury Parser](https://github.com/postlight/mercury-parser) API.
