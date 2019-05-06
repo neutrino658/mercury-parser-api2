@@ -6,10 +6,13 @@ COPY package*.json ./
 
 RUN apk add --no-cache --virtual build-pack git \
     && npm install \
-    && apk del build-pack 
+    && apk del build-pack \
+    && apk add --no-cache dumb-init
 
 COPY . .
 
 EXPOSE 3000
 
-CMD npm run start
+ENTRYPOINT ["dumb-init", "--"]
+
+CMD ["npm", "run", "start"]
