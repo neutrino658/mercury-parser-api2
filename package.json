@@ -2,6 +2,8 @@
   "name": "mercury-parser-api",
   "version": "1.0.0",
   "description": "🐋 A Dockerized drop-in replacement for the Mercury Parser API.",
+  "author": "HenryQW <github@henry.wang>",
+  "license": "(Apache 2.0 OR MIT)",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -10,7 +12,6 @@
   "engines": {
     "node": ">=6"
   },
-  "author": "HenryQW <github@henry.wang>",
   "dependencies": {
     "@postlight/mercury-parser": "^2.0.0",
     "bluebird": "^3.5.1",
