@@ -16,7 +16,7 @@ app.use(morgan('tiny'));
 app.use('/', routes);
 
 app.listen(config.server.port, () => {
-  console.log(`🚀Mercury Parser API listens on port ${config.server.port}`);
+    console.log(`🚀Mercury Parser API listens on port ${config.server.port}`);
 });
 
 module.exports = app;
