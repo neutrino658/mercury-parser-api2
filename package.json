@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "format": "eslint \"**/*.js\" --fix && prettier \"**/*.js\" --write"
+    "format": "eslint \"**/*.js\" --fix && prettier \"**/*.js\" --write",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=6"
@@ -23,7 +25,8 @@
     "body-parser": "1.19.0",
     "express": "4.17.1",
     "helmet": "3.18.0",
-    "morgan": "1.9.1"
+    "morgan": "1.9.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "eslint": "6.0.1",
@@ -32,5 +35,6 @@
     "husky": "2.6.0",
     "nodemon": "1.19.1",
     "prettier": "1.18.2"
-  }
+  },
+  "snyk": true
 }
