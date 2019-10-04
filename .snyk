@@ -8,3 +8,8 @@ patch:
         patched: '2019-07-03T22:11:04.973Z'
     - '@postlight/mercury-parser > turndown > jsdom > request-promise-native > request-promise-core > lodash':
         patched: '2019-07-03T22:11:04.973Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T22:11:15.739Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T22:11:15.739Z'
