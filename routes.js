@@ -19,7 +19,7 @@ router.route('/parser').get(async (req, res) => {
             }
             result = await Mercury.parse(req.query.url, {
                 contentType,
-                headers
+                headers,
             });
         } catch (error) {
             result = { error: true, messages: error.message };
