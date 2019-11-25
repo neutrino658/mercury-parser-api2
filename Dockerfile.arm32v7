@@ -1,5 +1,7 @@
 FROM arm32v7/node:13-alpine
 
+COPY qemu-arm-static /usr/bin
+
 WORKDIR /app
 
 COPY package*.json ./
